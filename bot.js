@@ -102,7 +102,7 @@ bot.on('callback_query', (query) => {
     if (query.data === 'english') {    
       botData[chatId] = {}; // Initialize botData for the user
       const welcomeMessage = 'To proceed \n If you are a new user kindly click on the sign up button to create an account.' +
-      '\n If you already have an account with Modest Data kindly click on Get Apikey and user Id, login then copy the apikey wriiten in red color and paste it here';
+      '\n If you already have an account with Modest Data kindly click on Get Apikey and user Id, login then copy the apikey written inside bracket and paste it here';
       const options = {
           reply_markup: {
               inline_keyboard: [
