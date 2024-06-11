@@ -407,7 +407,6 @@ bot.on('callback_query', async (query) => {
                       ]
                   }
               });
-              botData[chatId] = { apiKey: botData[chatId].apiKey, userId: botData[chatId].userId };
           } else if (purchaseJsonResponse.message === "API KEY INCORRECT") {
               bot.sendMessage(chatId, 'API key incorrect. Please restart the bot by clicking the button below. \n/start');
           } else if (purchaseJsonResponse.Successful === "true") {
