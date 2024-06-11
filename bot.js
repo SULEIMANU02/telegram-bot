@@ -370,6 +370,7 @@ bot.on('message', (msg) => {
                 ]
             }
         });
+        botData[chatId] = { apiKey: botData[chatId].apiKey, userId: botData[chatId].userId };
     } 
 });
 
