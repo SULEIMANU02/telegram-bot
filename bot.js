@@ -251,6 +251,7 @@ bot.on('callback_query', (query) => {
       reply_markup: {
           inline_keyboard: [
               [{ text: 'Buy Data', callback_data: 'buy_data' }],
+              [{ text: 'Fund Wallet', web_app: { url: 'https://modestdata.com.ng/?vend=wallet' } }],
               [{ text: 'Check Balance', callback_data: 'check_balance' }]
           ]
       }
@@ -349,6 +350,7 @@ bot.on('message', (msg) => {
             reply_markup: {
                 inline_keyboard: [
                     [{ text: 'Buy Data', callback_data: 'buy_data' }],
+                    [{ text: 'Fund Wallet', web_app: { url: 'https://modestdata.com.ng/?vend=wallet' } }],
                     [{ text: 'Check Balance', callback_data: 'check_balance' }]
                 ]
             }
